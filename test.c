@@ -27,5 +27,5 @@ int main(){
                 lista[i].id);
     }
 
-
+    return 0;
 }
