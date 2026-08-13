@@ -17,7 +17,7 @@ int main(){
 
     Curso MeuCurso;
     strcpy(MeuCurso.NomeAlunos[0].Aluno, "Gabriel");
-
+    Escola. = 1;
 
     return 0;
 }
