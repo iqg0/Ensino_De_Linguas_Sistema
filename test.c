@@ -15,10 +15,17 @@
 int main(){
 
     Aluno lista[3] = {
-        ("Test", 19, 120),
-        ("Test2", 20, 121),
-        ("Test3", 25, 122)
+        {"Test", 19, 120},
+        {"Test2", 20, 121},
+        {"Test3", 25, 122}
     };
+
+    for(int i = 0; i < 3; i++){
+        printf("Nome: %s, Idade: %d, Id: %d\n",
+                lista[i].nome,
+                lista[i].idade,
+                lista[i].id);
+    }
 
 
 }
