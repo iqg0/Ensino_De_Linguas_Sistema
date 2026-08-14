@@ -1,4 +1,5 @@
+*.o
+*.a
+*.so
 *.exe
- *.o 
- *.out 
- *.obj
+*.out
