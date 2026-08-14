@@ -19,5 +19,11 @@ int main(){
     strcpy(MeuCurso.NomeAlunos[0].Aluno, "Gabriel");
     MeuCurso.NomeAlunos[0].IdAluno = 19;
 
+    for(int i = 0; i == 0; i++){
+        printf("Nome: %s, Id: %d",
+                MeuCurso.NomeAlunos[i].Aluno,
+                MeuCurso.NomeAlunos[i].IdAluno);
+    }
+
     return 0;
 }
