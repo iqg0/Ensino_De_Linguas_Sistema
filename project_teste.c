@@ -4,7 +4,7 @@
     typedef struct{
         char nome[50];
         int id;
-        int nota;
+        float nota;
     }Aluno;
 
     typedef struct {
@@ -17,17 +17,22 @@
 int main() {
 
     Turma Curso;
+    Curso.totalAluno = 3;
 
-    int testeC2 = 0;
-    
-    printf("Informe o nome do aluno: ");
-    scanf("%49s", Curso.aluno[0].nome);
-
-    printf("Em qual turma(idioma) esse aluno se encontra matriculado: ");
+    printf("Em qual turma(idioma) esse aluno(s) se encontra(m) matriculado(s): ");
     scanf("%49s", Curso.idioma);
+    
+    for(int i = 0; i < Curso.totalAluno; i++){
 
-    printf("Nome: %s\n", Curso.aluno[0].nome);
-    printf("Curso: %s", Curso.idioma[0]);
+        printf("Informe o nome do aluno: ");
+        scanf("%49s", Curso.aluno[i].nome);
+        printf("Informe a nota do aluno: ");
+        scanf("%f", &Curso.aluno[i].nota);
 
+        printf("Nome: %s\n", Curso.aluno[i].nome);
+        printf("Nota: %.1f\n", Curso.aluno[i].nota);
+    }
+    printf("Curso: %s\n", Curso.idioma);
+    
     return 0;
 }
