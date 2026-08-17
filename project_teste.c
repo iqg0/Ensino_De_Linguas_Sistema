@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
     typedef struct{
         char nome[50];
@@ -16,8 +17,14 @@
 int main() {
 
     Turma Curso;
-    strcpy(Curso.aluno[0].nome, "Paulo");
+    printf("Informe o nome do aluno: ");
+    scanf("%49s", Curso.aluno[0].nome);
     
+
+
+
+
+    printf("Nome: %s\n", Curso.aluno[0].nome);
 
     return 0;
 }
