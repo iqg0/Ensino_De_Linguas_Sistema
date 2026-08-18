@@ -19,6 +19,7 @@ int main() {
     Turma Curso;
     Curso.totalAluno = 3;
 
+
     printf("Em qual turma(idioma) esse aluno(s) se encontra(m) matriculado(s): ");
     scanf("%49s", Curso.idioma);
     
@@ -26,10 +27,15 @@ int main() {
 
         printf("Informe o nome do aluno: ");
         scanf("%49s", Curso.aluno[i].nome);
+        printf("Informe o id do aluno: ");
+        scanf("%d", &Curso.aluno[i].id);
+
         printf("Informe a nota do aluno: ");
         scanf("%f", &Curso.aluno[i].nota);
 
+
         printf("Nome: %s\n", Curso.aluno[i].nome);
+        printf("ID: %d\n", Curso.aluno[i].id);
         printf("Nota: %.1f\n", Curso.aluno[i].nota);
     }
     printf("Curso: %s\n", Curso.idioma);
