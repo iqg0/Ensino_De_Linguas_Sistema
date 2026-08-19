@@ -7,6 +7,11 @@
         float nota;
     }Aluno;
 
+    typedef struct{
+        int alunoId;
+        float nota;
+    }Matricula;
+
     typedef struct {
         char idioma[50];
         char serie[50];
