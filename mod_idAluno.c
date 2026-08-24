@@ -24,8 +24,21 @@ int main(){
     
     printf("Aluno: %s, Id: %d, nota: %.1f\n", students[0].name, students[0].id, students[0].grade);
     printf("Aluno: %s, Id: %d, nota: %.1f\n", students[1].name, students[1].id, students[1].grade);
-    printf("Aluno: %s, Id: %d, nota: %.1f", students[2].name, students[2].id, students[2].grade);
+    printf("Aluno: %s, Id: %d, nota: %.1f\n", students[2].name, students[2].id, students[2].grade);
 
+
+    Aluno *found = searchAlunos(students, 3, 4);
+
+    if(found != NULL){
+        found->grade = 8.8;
+        printf("name: %s, nota: %.1f\n", found->name, found->grade);
+    }
+    else{
+        printf("Aluno nao encontrado\n");
+        return 0;
+    }
+    printf("Nova nota: %.1f", students[0].grade);
+    
 
     return 0;
 }
