@@ -43,11 +43,11 @@ int main (){
                         printf("Aluno buscado: %s: \n A nota do aluno buscado: %.1f", found->name, found->grade);
                     }
                     else{
-                        printf("Aluno nao encontrado");
-                        return 0;
+                        printf("Aluno nao encontrado\n");
                     }
             }
 
         
     }
+    return 0;
 }
