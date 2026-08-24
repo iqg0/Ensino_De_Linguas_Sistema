@@ -22,6 +22,8 @@ int main (){
                           {"Thiago", 3, 7.8},
                           {"Paulo", 2, 9.9}};
     
+
+    printf("**** LISTA DE ALUNOS CADRASTADOS ****\n");
     printf("Aluno: %s, Id: %d, nota: %.1f\n", students[0].name, students[0].id, students[0].grade);
     printf("Aluno: %s, Id: %d, nota: %.1f\n", students[1].name, students[1].id, students[1].grade);
     printf("Aluno: %s, Id: %d, nota: %.1f\n", students[2].name, students[2].id, students[2].grade);
@@ -40,7 +42,7 @@ int main (){
                 Aluno *found = searchAlunos(students, 3, idBuscado);
 
                     if(found != NULL){
-                        printf("Aluno buscado: %s: \n A nota do aluno buscado: %.1f", found->name, found->grade);
+                        printf("Aluno buscado: %s \nA nota do aluno buscado e: %.1f\n", found->name, found->grade);
                     }
                     else{
                         printf("Aluno nao encontrado\n");
